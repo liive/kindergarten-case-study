@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Little Sprouts Kindergarten Got Their Evenings Back</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            margin: 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .story-box {
+            background: #f8f9ff;
+            border-left: 5px solid #4facfe;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 10px;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 18px;
+            color: #2d3748;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        .attribution {
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .before, .after {
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid;
+        }
+        
+        .before {
+            background: #fed7d7;
+            border-color: #fc8181;
+        }
+        
+        .after {
+            background: #c6f6d5;
+            border-color: #68d391;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .before .section-title {
+            color: #c53030;
+        }
+        
+        .after .section-title {
+            color: #2f855a;
+        }
+        
+        .task {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .task-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .task-time {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .total {
+            background: #2d3748;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .highlight h3 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+            color: #2d3748;
+        }
+        
+        .highlight p {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #4a5568;
+        }
+        
+        .cta {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            margin: 30px 0 0 0;
+        }
+        
+        .cta h3 {
+            margin: 0 0 15px 0;
+            font-size: 22px;
+        }
+        
+        .cta p {
+            margin: 0 0 20px 0;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #4facfe;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>How Little Sprouts Kindergarten Got Their Evenings Back</h1>
+            <p>A real story of administrative transformation</p>
+        </div>
+        
+        <div class="content">
+            <div class="story-box">
+                <div class="quote">
+                    "I was staying until 7 PM every day just to finish attendance, send parent updates, and plan meals. My own kids barely saw me. Now I'm home by 5:30 and actually have energy to play with them."
+                </div>
+                <div class="attribution">
+                    — Sarah Mitchell, Director at Little Sprouts Kindergarten, Manchester
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">47</div>
+                    <div class="stat-label">Children enrolled</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Staff members</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Months using Kidviq</div>
+                </div>
+            </div>
+            
+            <div class="comparison">
+                <div class="before">
+                    <div class="section-title">Sarah's Old Routine</div>
+                    
+                    <div class="task">
+                        <div class="task-name">Daily Attendance</div>
+                        <div class="task-time">Paper sheets → Excel → Email parents of absences<br><strong>25 mins/day</strong></div>
+                    </div>
+                    
+                    <div class="task">
+                        <div class="task-name">Parent Updates</div>
+                        <div class="task-time">Photos → WhatsApp groups + individual emails<br><strong>35 mins/day</strong></div>
+                    </div>
+                    
+                    <div class="task">
+                        <div class="task-name">Weekly Menu Planning</div>
+                        <div class="task-time">Plan → Type → Print → Post → Email<br><strong>45 mins/week</strong></div>
+                    </div>
+                    
+                    <div class="task">
+                        <div class="task-name">Monthly Reports</div>
+                        <div class="task-time">Collect data → Format → Send to council<br><strong>3 hours/month</strong></div>
+                    </div>
+                </div>
+                
+                <div class="after">
+                    <div class="section-title">Sarah's New Routine</div>
+                    
+                    <div class="task">
+                        <div class="task-name">Daily Attendance</div>
+                        <div class="task-time">Tap names → Auto-notifications sent<br><strong>3 mins/day</strong></div>
+                    </div>
+                    
+                    <div class="task">
+                        <div class="task-name">Parent Updates</div>
+                        <div class="task-time">Snap photo → One tap → Sent to all<br><strong>8 mins/day</strong></div>
+                    </div>
+                    
+                    <div class="task">
+                        <div class="task-name">Weekly Menu Planning</div>
+                        <div class="task-time">Drag & drop from template library<br><strong>8 mins/week</strong></div>
+                    </div>
+                    
+                    <div class="task">
+                        <div class="task-name">Monthly Reports</div>
+                        <div class="task-time">Click "Generate Report" → Done<br><strong>30 seconds/month</strong></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="total">
+                Time Saved: <strong>6.2 hours per week</strong> | That's 27 hours per month | 324 hours per year
+            </div>
+            
+            <div class="highlight">
+                <h3>What Sarah Does With Her Extra Time</h3>
+                <p>✨ <strong>More quality interactions</strong> with children during the day</p>
+                <p>🏠 <strong>Home by 5:30 PM</strong> instead of 7:00 PM</p>
+                <p>💪 <strong>Energy left</strong> for her own family and hobbies</p>
+                <p>📈 <strong>99% parent satisfaction</strong> (up from 84%) due to better communication</p>
+            </div>
+            
+            <div class="story-box">
+                <div class="quote">
+                    "Last Tuesday, little Emma had a meltdown during snack time. I took a quick photo of her teacher helping her calm down with our sensory corner, added a note about how she recovered, and sent it instantly. Her mum texted back saying it helped her understand why Emma was asking about 'breathing bubbles' at home. These micro-moments matter so much to parents."
+                </div>
+                <div class="attribution">
+                    — Sarah Mitchell, after using Kidviq for 3 months
+                </div>
+            </div>
+            
+            <div class="cta">
+                <h3>Ready to Get Your Evenings Back?</h3>
+                <p>Book a 15-minute demo and see exactly how this would work for your kindergarten</p>
+                <a href="https://kidviq.com/?demo=true" class="cta-button">Schedule Your Demo</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
