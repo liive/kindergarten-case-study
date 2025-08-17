@@ -26,7 +26,7 @@
         }
         
         .container {
-            max-width: 210mm;
+            max-width: 250mm;
             margin: 0 auto;
             background: white;
             padding: 0;
@@ -57,7 +57,7 @@
         .header {
             background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #EC4899 100%);
             color: white;
-            padding: 60px 40px;
+            padding: 40px 40px;
             text-align: center;
             border-radius: 24px 24px 0 0;
             position: relative;
@@ -96,17 +96,31 @@
         }
         
         .header h1 {
-            margin: 0 0 16px 0;
-            font-size: 42px;
+            margin: 0 0 8px 0;
+            font-size: 32px;
             font-weight: 800;
             letter-spacing: -0.02em;
             position: relative;
             z-index: 1;
         }
         
+        .savings-highlight {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 16px 24px;
+            margin: 16px 0 0 0;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #059669;
+            border: 2px solid #22C55E;
+            position: relative;
+            z-index: 1;
+        }
+        
         .header p {
             margin: 0;
-            font-size: 20px;
+            font-size: 17px;
             opacity: 0.9;
             font-weight: 400;
             position: relative;
@@ -114,7 +128,7 @@
         }
         
         .content {
-            padding: 40px;
+            padding: 24px;
             background: white;
             position: relative;
             z-index: 1;
@@ -125,8 +139,8 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(228, 228, 231, 0.3);
             border-left: 4px solid #6366F1;
-            padding: 32px;
-            margin: 32px 0;
+            padding: 20px;
+            margin: 16px 0;
             border-radius: 16px;
             position: relative;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -163,7 +177,7 @@
         }
         
         .quote {
-            font-size: 16px;
+            font-size: 14px;
             color: #111827;
             margin-bottom: 20px;
             line-height: 1.6;
@@ -175,7 +189,7 @@
         .attribution {
             font-weight: 600;
             color: #374151;
-            font-size: 13px;
+            font-size: 11px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             position: relative;
@@ -185,13 +199,13 @@
         .stats {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin: 40px 0;
+            gap: 16px;
+            margin: 24px 0;
         }
         
         .stat {
             text-align: center;
-            padding: 32px 24px;
+            padding: 20px 16px;
             background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.6) 100%);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
@@ -220,17 +234,17 @@
         }
         
         .stat-number {
-            font-size: 48px;
+            font-size: 36px;
             font-weight: 800;
             color: #6366F1;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             letter-spacing: -0.02em;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
         }
         
         .stat-label {
-            font-size: 13px;
+            font-size: 11px;
             color: #64748B;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -242,6 +256,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 32px;
             margin: 40px 0;
+            align-items: start;
         }
         
         .before, .after {
@@ -251,6 +266,9 @@
             position: relative;
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
         }
         
         .before {
@@ -266,7 +284,7 @@
         .section-title {
             font-weight: 700;
             font-size: 18px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             text-align: center;
             letter-spacing: -0.01em;
             color: #111827;
@@ -282,18 +300,19 @@
         
         .task {
             background: white;
-            padding: 20px;
-            margin: 16px 0;
+            padding: 16px;
+            margin: 12px 0;
             border-radius: 12px;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.8);
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
+            flex: 1;
         }
         
         .task-name {
             font-weight: 600;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             font-size: 14px;
             color: #111827;
         }
@@ -307,11 +326,11 @@
         .total {
             background: linear-gradient(135deg, #111827 0%, #1F2937 100%);
             color: white;
-            padding: 28px;
+            padding: 24px;
             border-radius: 16px;
             text-align: center;
-            margin: 40px 0;
-            font-size: 16px;
+            margin: 20px 0 30px 0;
+            font-size: 15px;
             font-weight: 600;
             line-height: 1.6;
             -webkit-print-color-adjust: exact;
@@ -354,13 +373,21 @@
         }
         
         .highlight p {
-            margin: 12px 0;
+            margin: 8px 0;
             font-size: 15px;
             color: #1F2937;
             font-weight: 500;
             position: relative;
             z-index: 1;
             line-height: 1.6;
+        }
+        
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
         }
         
         .cta {
@@ -477,6 +504,9 @@
         <div class="header">
             <h1>How Bright Beginnings Montessori Saves 27 Hours/Month</h1>
             <p>A real story of administrative efficiency with Kidviq</p>
+            <div class="savings-highlight">
+                💲 Saves £405+ Monthly | ⏰ 27 Hours Freed Up | ✅ Zero Admin Stress
+            </div>
         </div>
         
         <div class="content">
@@ -534,7 +564,7 @@
                     
                     <div class="task">
                         <div class="task-name">Daily Attendance</div>
-                        <div class="task-time">Auto-notifications received → Tap names to mark attendance<br><br><br><strong>3 mins/day</strong></div>
+                        <div class="task-time">Auto-notifications received → Tap names to mark attendance<br><strong>3 mins/day</strong></div>
                     </div>
                     
                     <div class="task">
@@ -562,10 +592,16 @@
             
             <div class="highlight">
                 <h3>What 27 Hours Per Month Actually Means</h3>
-                <p>💰 <strong>£405+ value</strong> in management time (at £15/hour) freed for growth</p>
-                <p>📊 <strong>Better parent satisfaction</strong> leads to higher retention and referrals</p>
-                <p>⚡ <strong>Faster responses</strong> to parents and staff reduce complaints</p>
-                <p>📈 <strong>Focus on business growth</strong> instead of administrative busywork</p>
+                <div class="highlight-grid">
+                    <div>
+                        <p>💲 <strong>£405+ value</strong> in management time (at £15/hour) freed for growth</p>
+                        <p>✅ <strong>Better parent satisfaction</strong> leads to higher retention and referrals</p>
+                    </div>
+                    <div>
+                        <p>✅ <strong>Faster responses</strong> to parents and staff reduce complaints</p>
+                        <p>💲 <strong>Focus on business growth</strong> instead of administrative busywork</p>
+                    </div>
+                </div>
             </div>
             
             <div class="story-box">
@@ -584,7 +620,7 @@
             </div>
             
             <div class="footer">
-                <p>Kidviq - Kindergarten Management Made Simple | <a href="https://www.kidviq.com" style="color: #6366F1; text-decoration: none;">www.kidviq.com</p>
+                <p>Kidviq - Kindergarten Management Made Simple | <a href="https://www.kidviq.com" style="color: #6366F1; text-decoration: none;">www.kidviq.com</a></p>
             </div>
         </div>
     </div>
